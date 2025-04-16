@@ -1,5 +1,5 @@
 name: First Workflow
-on: push
+on: requst_dispatch
 env: NAME="Palash"
 jobs:
   first-job:
