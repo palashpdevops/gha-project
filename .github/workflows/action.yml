@@ -1,11 +1,13 @@
 name: Deploy Project
 on: [push, workflow_dispatch]
+env:
+  NAME: "Palash"
 jobs:
   Test:
     runs-on: ubuntu-latest
     steps:
       - name: Print Name
-        run: echo "Running my workflow"
+        run: echo "Hello $NAME! Started the workflow"
       - name: Get Code
         uses: actions/checkout@v3
       - name: Install NodeJS
