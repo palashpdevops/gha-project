@@ -1,28 +1,11 @@
 name: Deploy Project
-on: [push, workflow_dispatch]
+on: workflow_dispatch
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Get code
-        uses: actions/checkout@v3
-      - name: Install NodeJS
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - name: Install Dependencies
-        run: npm -v
-  deploy:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get code
-        uses: actions/checkout@v3
-      - name: Install NodeJS
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - name: Build project
-        run: npm run build
-      - name: Deploy
-        run: echo "Deploying ..."
+      - name: Prine Name
+        run: echo "Running my workflow"
+        run: ls -l
+      - name: Print by message
+        run: echo "Finished the workflow - Bye!"
