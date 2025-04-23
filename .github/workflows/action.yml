@@ -6,10 +6,10 @@ jobs:
   Test:
     runs-on: ubuntu-latest
     steps:
-      env:
-        NAME: "Friend"
       - name: Print Name
         run: echo "Hello $NAME! Started the workflow"
+        env:
+          NAME: "Friend"
       - name: Get Code
         uses: actions/checkout@v3
       - name: Install NodeJS
