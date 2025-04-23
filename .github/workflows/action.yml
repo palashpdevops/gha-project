@@ -19,7 +19,7 @@ jobs:
       - name: Get Code
         uses: actions/checkout@v3
       - name: Show all pre-installed sofyware in runner machine
-        run: rpm -qa
+        run: apt list --installed
            
         
         
