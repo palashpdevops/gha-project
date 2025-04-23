@@ -12,6 +12,17 @@ jobs:
         uses: actions/checkout@v3
       - name: Install NodeJS
         uses: actions/setup-node@v4
-      - run: npm ci  
+      - run: node -v
+ Result:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Name
+        run: |
+            echo "Completed last job successfully"
+      - name: Get Code
+        uses: actions/checkout@v3
+      - name: Show all pre-installed sofyware in runner machine
+        run: rpm -qa
+           
         
         
