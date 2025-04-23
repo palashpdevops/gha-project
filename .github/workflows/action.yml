@@ -6,6 +6,8 @@ jobs:
   Test:
     runs-on: ubuntu-latest
     steps:
+      env:
+        NAME: "Friend"
       - name: Print Name
         run: echo "Hello $NAME! Started the workflow"
       - name: Get Code
