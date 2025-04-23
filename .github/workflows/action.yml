@@ -5,7 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Prine Name
-        run: echo "Running my workflow"
-        run: ls -l
+        run: |
+            echo "Running my workflow"
+            ls -l
       - name: Print by message
         run: echo "Finished the workflow - Bye!"
