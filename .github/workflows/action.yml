@@ -5,20 +5,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Name
-        run: |
-            echo "Running my workflow"
-            ls -l
+        run: echo "Running my workflow"
       - name: Get Code
         uses: actions/checkout@v3
       - name: Install NodeJS
         uses: actions/setup-node@v4
       - run: node -v
- Result:
+  Results:
     runs-on: ubuntu-latest
     steps:
       - name: Print Name
-        run: |
-            echo "Completed last job successfully"
+        run: echo "Completed last job successfully"
       - name: Get Code
         uses: actions/checkout@v3
       - name: Show all pre-installed sofyware in runner machine
