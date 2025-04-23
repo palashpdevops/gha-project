@@ -4,7 +4,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Prine Name
+      - name: Print Name
         run: |
             echo "Running my workflow"
             ls -l
